@@ -9,5 +9,5 @@ class Post extends Model
 
 {
 
-    protected $fillable = ['title'];
+    protected $fillable = ['title', 'published_at'];
 }

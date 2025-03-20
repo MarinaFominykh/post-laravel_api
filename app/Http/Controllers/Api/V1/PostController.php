@@ -14,7 +14,7 @@ class PostController extends Controller
      */
     public function index()
     {
-       return Post::all();
+       return Post::whereNotNull('published_at')->orderBy('published_at', 'desc')->get();
     }
 
     /**
